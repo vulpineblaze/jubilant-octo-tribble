@@ -5,8 +5,8 @@ ig.module(
 	'impact.game',
 	'impact.font',
 	'impact.timer',
-	'game.levels.map1',
-	'impact.debug.debug'
+	'game.levels.map1' 
+	// 'impact.debug.debug'
 )
 .defines(function(){
 
@@ -41,6 +41,10 @@ MyGame = ig.Game.extend({
 	lines: [],
 
 	clack: {has: false, deflt: 2},
+
+	clackSFX: new ig.Sound( 'media/sounds/clack.*' ),
+	turnSFX: new ig.Sound( 'media/sounds/turn.*' ),
+	// deathSFX: new ig.Sound( 'media/sounds/death.*' ),
 
 	init: function() {
 		// Initialize your game here; bind keys etc.
@@ -234,6 +238,7 @@ MyGame = ig.Game.extend({
     },//end spawn func
 
 	startNewTurn: function(){
+		this.turnSFX.play();
       this.turnTimer = this.levelTimer.delta();
 
         var allPoi = ig.game.getEntitiesByType( EntityPoi );

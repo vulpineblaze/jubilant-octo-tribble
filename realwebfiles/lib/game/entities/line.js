@@ -25,6 +25,7 @@ ig.module(
           this.timer = new ig.Timer();
           this.timer.set(ig.game.clack.deflt);
           ig.game.clack.has = true;
+          ig.game.clackSFX.play();
           // ig.log("MADE LINE");
         },
  
