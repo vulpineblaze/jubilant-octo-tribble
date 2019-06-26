@@ -21,13 +21,13 @@
 ![Example screenshot](https://github.com/vulpineblaze/jubilant-octo-tribble/blob/master/screenshots/screenshotLD36.PNG)
 
 ## Technologies
-* impactJS
+* ImpactJS
 
 ## Setup
 http://fusionbombsderp.com/jubilant_octo_tribble/
 
 ### Requirements
-* impactJS
+* ImpactJS
 
 ### Usage
 Load via browser and play per instructions!
